@@ -15,10 +15,6 @@ public class ProductService {
 	@Autowired
 	ProductRepository productRepository;
 
-	/* search all types*/
-//	public List<product> getAll(){
-//		return productRepository.findAll();
-//	}
 	public Optional<List<product>> getALL(){
 		if(productRepository.count() == 0){
 			return Optional.empty();
@@ -27,15 +23,16 @@ public class ProductService {
 		}
 	}
 	
-	public String addOne(product pro) {
-		productRepository.save(pro);
-		return "Product Added Succesfully";
-	}
-	
-	public product get(int empId) {
-		return productRepository.findById(empId).get();
+	public product get(int proId) {
+		return productRepository.findById(proId).get();
 	}
 
+	public String addOne(product pro) {
+			productRepository.save(pro);
+			return "Product Added Succesfully";
+	
+	}
+	
 	public String editOne(product pro) {
 		productRepository.save(pro);
 		return "Product Updated Succesfully";
