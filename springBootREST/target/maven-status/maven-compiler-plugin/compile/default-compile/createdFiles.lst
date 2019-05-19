@@ -1,0 +1,5 @@
+com\emalcoding\springBootREST\controller\ShipingController.class
+com\emalcoding\springBootREST\dao\ShippingDao.class
+com\emalcoding\springBootREST\model\Shipping.class
+com\emalcoding\springBootREST\repository\ShippingRepository.class
+com\emalcoding\springBootREST\ShippingApplication.class
